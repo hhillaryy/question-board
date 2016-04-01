@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'question-board',
     environment: environment,
-    baseURL: 'https://https://blistering-fire-3821.firebaseio.com///',
+    baseURL: 'https://blistering-fire-3821.firebaseio.com///',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
