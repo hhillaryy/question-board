@@ -5,8 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'question-board',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
-    baseURL: 'https://blistering-fire-3821.firebaseio.com/',
+    firebase: 'https://blistering-fire-3821.firebaseio.com/',
+    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
