@@ -9,6 +9,7 @@
 
 <ul>
   {{#each model as |answer|}}
+    {{question-title question=question}}
      <li>{{answer.user}} responded: <br> {{answer.text}}</li>
   {{/each}}
 </ul>
