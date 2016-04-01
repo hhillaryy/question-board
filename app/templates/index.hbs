@@ -5,6 +5,12 @@
 <h3>Ask A Question, Find An Answer. <br>
   Know the Answer? Help Someone.</h3>
 
-<p>This message board was created to help people find the answers to their questions both mundane and complex</p>
+<p id="info">This message board was created to help people find the answers to their questions both mundane and complex</p>
+
+<ul>
+  {{#each model as |answer|}}
+     <li>{{answer.user}} responded: <br> {{answer.text}}</li>
+  {{/each}}
+</ul>
 
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
