@@ -12,6 +12,6 @@ var answers = [{
 
 export default Ember.Route.extend({
   model() {
-    return answers;
+    return this.store.findAll('answer');
   }
 });
