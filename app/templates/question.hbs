@@ -1,3 +1,10 @@
-<h2>{{model.title}} {{model.author}} {{model.post}}</h2>
+<h2>{{model.title}} {{model.author}} {{model.details}}</h2>
 {{update-question question=model update="update"}}
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
+
+{{new-answer question=model saveAnswer="saveAnswer"}}
+{{#each model.answers as |answer|}}
+  <li>{{answer.title}} : {{answer.author}}</li>
+  <button {{action 'delete' answer}}>Delete Answer</button>
+
+{{/each}}

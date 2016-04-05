@@ -1,6 +1,5 @@
 
 <!-- {{outlet}} -->
-<h1>FindAnswers</h1>
 
 <h3>Ask A Question, Find An Answer. <br>
   Know the Answer? Help Someone.</h3>
@@ -8,10 +7,8 @@
 <p id="info">This message board was created to help people find the answers to their questions both mundane and complex</p>
 
 <ul>
-  {{#each model as |answer|}}
-    {{question-title question=question}}
-     <li>{{answer.user}} responded: <br> {{answer.text}}</li>
+  {{#each model.questions as |question|}}
+    {{question-tile question=question destroyQuestion="destroyQuestion" update="update"}}
   {{/each}}
 </ul>
-
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+{{new-question save="save"}}
