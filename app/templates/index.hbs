@@ -7,7 +7,7 @@
 <p id="info">This message board was created to help people find the answers to their questions both mundane and complex</p>
 
 <ul>
-  {{#each model.questions as |question|}}
+  {{#each model.question as |question|}}
     {{question-tile question=question destroyQuestion="destroyQuestion" update="update"}}
   <li>{{answer-popularity answer}} {{#link-to 'answer' answer.id}}{{answer.user}}{{/link-to}}</li>
   {{/each}}
