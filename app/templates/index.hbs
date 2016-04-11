@@ -9,6 +9,7 @@
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question destroyQuestion="destroyQuestion" update="update"}}
+  <li>{{answer-popularity answer}} {{#link-to 'answer' answer.id}}{{answer.user}}{{/link-to}}</li>
   {{/each}}
 </ul>
 {{new-question save="save"}}
