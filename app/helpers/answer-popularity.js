@@ -1,10 +1,11 @@
 import Ember from 'ember';
 
 export function answerPopularity(params/*, hash*/) {
-  var answer = params[0];
+  var question = params[0];
 
-  if(question.get('answer').get('length') >= 4)
-  return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
+  if(question.get('answer').get('length') >= 4) {
+    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-star"></span>');
+  }
 }
 
 export default Ember.Helper.helper(answerPopularity);
