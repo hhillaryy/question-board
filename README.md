@@ -1,53 +1,29 @@
-# Question-board
+#Question Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Allows an individual to ask or answer a question on a forum-like page (4/12/16)
 
-## Prerequisites
+#### By Hillary Hintzen
 
-You will need the following things properly installed on your computer.
+##Description
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+This application allows a user to enter a question or answer another user's question, up-vote questions, etc.
 
-## Installation
+## Setup/Installation Requirements
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* _For ease of alteration you will need:_
+* _a GitHub account, an internet connection,_
+* You will need to install Node with all npm packages, ember, bower, watchman, and bootstrap (sass is also optional)._
 
-## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Support and contact details
 
-### Code Generators
+_Please contact me through GitHub if you have any questions or concerns._
 
-Make use of the many generators for code, try `ember help generate` for more details
+## Technologies Used
 
-### Running Tests
+_This app was built using Ember, Node, Bower, Bootstrap, and Sass._
 
-* `ember test`
-* `ember test --server`
+### License
 
-### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 Hillary Hintzen for Epicodus
