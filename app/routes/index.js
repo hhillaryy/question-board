@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
-    questions: this.store.findAll('question'),
+    questions: this.store.findAll('question')
   });
   },
   actions: {
@@ -11,7 +11,8 @@ export default Ember.Route.extend({
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.transitionTo('index');
-    }
+    },
+    // Do I need to send action up here?
   }
 });
 
