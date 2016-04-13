@@ -5,7 +5,4 @@
 {{new-answer question=model saveAnswer="saveAnswer"}}
 {{#each model.answers as |answer|}}
   <li>{{answer.title}} : {{answer.author}}</li>
-  <button {{action 'delete' answer}}>Delete Answer</button>
-  <button {{action 'upVoteAnswer' answer}}>Up Vote!</button>
-
 {{/each}}
