@@ -27,10 +27,5 @@ export default Ember.Route.extend({
       question.destroyRecord();
       this.transitionTo('index');
     }
-    // upVote(answer) {
-    //   console.log(answer);
-    //   console.log(answer.votes);
-    //   answer.save();
-    // }
   }
 });
