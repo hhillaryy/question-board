@@ -1,5 +1,5 @@
 
-<!-- {{outlet}} -->
+{{outlet}}
 
 <h3>Ask A Question, Find An Answer. <br>
   Know the Answer? Help Someone.</h3>
@@ -8,8 +8,7 @@
 
 <ul>
   {{#each model as |question|}}
-    {{question-detail question=question destroyQuestion="destroyQuestion" update="update"}}
-  {{answer}} {{#link-to 'answer' answer.id}}{{answer.name}}{{/link-to}}
+  <li>  {{question question=question}} </li>
   {{/each}}
 </ul>
 {{new-question save="save"}}

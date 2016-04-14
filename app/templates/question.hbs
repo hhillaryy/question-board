@@ -1,8 +1,14 @@
 <h2>{{question.title}} {{question.author}} {{question.details}}</h2>
+
 {{update-question question=model update="update"}}
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
+
+<h2> answers: </h2>
+
 {{new-answer question=model saveAnswer="saveAnswer"}}
+<ul>
 {{#each model.answers as |answer|}}
-  <li>{{answer.title}} : {{answer.author}}</li>
+  <li>{{answer.title}} : {{answer.text}}</li>
 {{/each}}
+</ul>

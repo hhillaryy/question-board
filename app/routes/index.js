@@ -12,7 +12,6 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
-    // Do I need to send action up here?
   }
 });
 
