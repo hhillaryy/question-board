@@ -2,15 +2,17 @@
 <h1>New Answer</h1>
 <div>
   <form>
-    <div class="form-group">
-      <label for="title">Title</label>
-      {{input value=title id="title"}}
-    </div>
 
     <div class="form-group">
       <label for="user">Username</label>
       {{input value=user id="user"}}
     </div>
+
+    <div class="form-group">
+      <label for="title">Answer Text</label>
+      {{input value=title id="title"}}
+    </div>
+
 
     <button {{action 'saveAnswer'}}>Save</button>
   </form>

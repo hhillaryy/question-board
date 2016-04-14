@@ -7,9 +7,16 @@
 <p id="info">This message board was created to help people find the answers to their questions both mundane and complex</p>
 
 <ul>
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
+{{new-question save="save"}}
+
+
+<!-- old version <ul>
   {{#each model as |question|}}
   <li> {{question question=question}}
  {{question.author question.title question.post}}</li>
   {{/each}}
-</ul>
-{{new-question save="save"}}
+</ul> -->
