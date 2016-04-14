@@ -8,7 +8,8 @@
 
 <ul>
   {{#each model as |question|}}
-  <li>  {{question question=question}} </li>
+  <li> {{question question=question}}
+ {{question.author question.title question.post}}</li>
   {{/each}}
 </ul>
 {{new-question save="save"}}
